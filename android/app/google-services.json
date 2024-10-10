@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "160026859774",
+    "project_id": "eaglevaletparking-a14cd",
+    "storage_bucket": "eaglevaletparking-a14cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160026859774:android:0a2f8974b565d02483adaf",
+        "android_client_info": {
+          "package_name": "com.example.eagle_valet_parking_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNOvERpPo07nUIa4LrcQX0Oy1_hUmrQO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
