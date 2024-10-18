@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        title: 'Eagle valte parking',
+        title: 'Eagle valet parking',
         theme: ThemeManager.lightTheme,
         initialRoute: Routes.splashScreen,
         onGenerateRoute: (settings) => RoutesGeneratour.getRoute(settings),
