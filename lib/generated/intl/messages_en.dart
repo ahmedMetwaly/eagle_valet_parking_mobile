@@ -74,7 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("OR continue as a"),
         "createAccount":
             MessageLookupByLibrary.simpleMessage("Create accoount"),
-        "currency": MessageLookupByLibrary.simpleMessage("EGP"),
+        "currency": MessageLookupByLibrary.simpleMessage("KWD"),
         "delete": MessageLookupByLibrary.simpleMessage("Delete"),
         "deleteContent": MessageLookupByLibrary.simpleMessage(
             "Do you want to delete this item ?"),
@@ -120,7 +120,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "enLang": MessageLookupByLibrary.simpleMessage("English"),
         "enterTime": MessageLookupByLibrary.simpleMessage("Enter time"),
         "enterValidNationalId": MessageLookupByLibrary.simpleMessage(
-            "National ID must be 14 digits"),
+            "National ID must be 12 digits"),
+        "enterValidNumber":
+            MessageLookupByLibrary.simpleMessage("Enter valid phone number"),
         "error": MessageLookupByLibrary.simpleMessage("Error"),
         "errorToManyRequests": MessageLookupByLibrary.simpleMessage(
             "You made too many requests within a window of time and have been rate limited. Back off for a while"),
@@ -226,7 +228,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requiredField": MessageLookupByLibrary.simpleMessage("Required Field"),
         "resendEmail": MessageLookupByLibrary.simpleMessage("Resend email"),
         "retry": MessageLookupByLibrary.simpleMessage("Retry"),
-        "sales": MessageLookupByLibrary.simpleMessage("Sales"),
+        "sales": MessageLookupByLibrary.simpleMessage("Sales with KWD"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "searchHint": MessageLookupByLibrary.simpleMessage(
@@ -259,6 +261,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalCustomersOfToday":
             MessageLookupByLibrary.simpleMessage("Number of customers"),
         "totalIncome": MessageLookupByLibrary.simpleMessage("Total income"),
+        "totalIncomeOfToday":
+            MessageLookupByLibrary.simpleMessage("Total income of today"),
         "transactionOf": MessageLookupByLibrary.simpleMessage("Transaction in"),
         "trend": MessageLookupByLibrary.simpleMessage("Trending topic today"),
         "unKnownError": MessageLookupByLibrary.simpleMessage(

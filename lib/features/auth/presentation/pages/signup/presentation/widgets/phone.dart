@@ -1,4 +1,4 @@
-import 'package:eagle_valet_parking_mobile/features/add_new_parking/controller/bloc/add_employers_bloc/employer_bloc.dart';
+/* import 'package:eagle_valet_parking_mobile/features/add_new_parking/controller/bloc/add_employers_bloc/employer_bloc.dart';
 import 'package:eagle_valet_parking_mobile/features/add_new_parking/controller/bloc/add_employers_bloc/employer_states.dart';
 import "package:flutter/material.dart";
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -61,6 +61,40 @@ class Phone extends StatelessWidget {
           //print('On Saved: $number');
         },
       ),
+    );
+  }
+}
+ */
+
+import "package:flutter/material.dart";
+
+import "../../../../../../../generated/l10n.dart";
+
+class PhoneNumber extends StatelessWidget {
+  const PhoneNumber({
+    super.key, required this.controller
+  });
+ final TextEditingController controller ;
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: controller,
+      keyboardType: TextInputType.number,
+      style: Theme.of(context).textTheme.bodyMedium,
+      validator: (value) {
+        if (value!.isEmpty) {
+          return S.current.requiredField;
+        }if (value.length<8){
+          return S.current.enterValidNumber;
+        }
+        if (value.contains(".")||value.contains("-")||value.contains(",")){
+          return S.current.enterValidNumber;
+        }
+        return null;
+      },
+      decoration:  InputDecoration(
+        labelText: S.current.phoneNumber,
+       ),
     );
   }
 }

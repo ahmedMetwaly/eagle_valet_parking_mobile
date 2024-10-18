@@ -1380,10 +1380,10 @@ class S {
     );
   }
 
-  /// `EGP`
+  /// `KWD`
   String get currency {
     return Intl.message(
-      'EGP',
+      'KWD',
       name: 'currency',
       desc: '',
       args: [],
@@ -1530,10 +1530,10 @@ class S {
     );
   }
 
-  /// `Sales`
+  /// `Sales with KWD`
   String get sales {
     return Intl.message(
-      'Sales',
+      'Sales with KWD',
       name: 'sales',
       desc: '',
       args: [],
@@ -1780,10 +1780,10 @@ class S {
     );
   }
 
-  /// `National ID must be 14 digits`
+  /// `National ID must be 12 digits`
   String get enterValidNationalId {
     return Intl.message(
-      'National ID must be 14 digits',
+      'National ID must be 12 digits',
       name: 'enterValidNationalId',
       desc: '',
       args: [],
@@ -1825,6 +1825,26 @@ class S {
     return Intl.message(
       'Total numbers of customers',
       name: 'totalCustomer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter valid phone number`
+  String get enterValidNumber {
+    return Intl.message(
+      'Enter valid phone number',
+      name: 'enterValidNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total income of today`
+  String get totalIncomeOfToday {
+    return Intl.message(
+      'Total income of today',
+      name: 'totalIncomeOfToday',
       desc: '',
       args: [],
     );

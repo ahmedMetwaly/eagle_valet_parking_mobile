@@ -132,7 +132,7 @@
     "liveOverView": "Live overview",
     "total": "Total",
     "totalIncome": "Total income",
-    "currency": "EGP",
+    "currency": "KWD",
     "thisParkingIsStillClosing": "This parking is still closing",
     "transactionOf": "Transaction in",
     "selectMonth": "Select month",
@@ -147,7 +147,7 @@
     "duration": "Duration",
     "stillInside": "Still inside",
     "compare_between_parkings": "Compare between parkings",
-    "sales": "Sales",
+    "sales": "Sales with KWD",
     "editName": "Edit name",
     "changePassword": "Change password",
     "save": "Save",
@@ -172,9 +172,11 @@
     "updatingDataInProgress": "Updating data in progress",
     "addingNewEmployers": "Adding new employees",
     "gettingEmployersData": "Getting employees data",
-    "enterValidNationalId": "National ID must be 14 digits",
+    "enterValidNationalId": "National ID must be 12 digits",
     "nationalIdError": "National ID must cantaions only digits",
     "hours": "Hours",
     "minutes" :"Minutes",
-    "totalCustomer": "Total numbers of customers"
+    "totalCustomer": "Total numbers of customers",
+    "enterValidNumber" :"Enter valid phone number",
+    "totalIncomeOfToday" : "Total income of today"
 }

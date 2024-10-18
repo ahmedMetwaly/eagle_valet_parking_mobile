@@ -83,7 +83,7 @@ class Employers extends StatelessWidget {
                         NationalId(
                           controller: AddEmployersCubit.employers[index][2],
                           onChange: (value) {
-                            if (value.toString().length == 14) {
+                            if (value.toString().length == 12) {
                               AddEmployersCubit.employers[index][1].text +=
                                   value
                                       .toString()
@@ -95,7 +95,7 @@ class Employers extends StatelessWidget {
                           },
                         ),
                         const SizedBox(height: 10),
-                        Phone(
+                        PhoneNumber(
                             controller: AddEmployersCubit.employers[index][3]),
                         const SizedBox(height: 10),
                         Name(

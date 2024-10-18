@@ -70,7 +70,7 @@ class EditProfile extends StatelessWidget {
                           title: S.current.name,
                           maxLines: 1),
                     //  const SizedBox(height: 10),
-                      Phone(controller: phoneController),
+                      PhoneNumber(controller: phoneController),
                       ElevatedButton(
                           style: ButtonStyle(
                               padding: const WidgetStatePropertyAll(

@@ -73,7 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueAsGuest":
             MessageLookupByLibrary.simpleMessage("أو المتابعة كـ"),
         "createAccount": MessageLookupByLibrary.simpleMessage("عمل حساب"),
-        "currency": MessageLookupByLibrary.simpleMessage("جنيها"),
+        "currency": MessageLookupByLibrary.simpleMessage("دينار كويتى"),
         "delete": MessageLookupByLibrary.simpleMessage("حذف"),
         "deleteContent":
             MessageLookupByLibrary.simpleMessage("هل تريد حذف هذا العنصر؟"),
@@ -117,7 +117,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "enLang": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
         "enterTime": MessageLookupByLibrary.simpleMessage("وقت االدخول"),
         "enterValidNationalId": MessageLookupByLibrary.simpleMessage(
-            "الرقم القومى لابد ان يكون 14 رقم"),
+            "الرقم القومى لابد ان يكون 12 رقم"),
+        "enterValidNumber":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم هاتف صحيح"),
         "error": MessageLookupByLibrary.simpleMessage("خطأ"),
         "errorToManyRequests": MessageLookupByLibrary.simpleMessage(
             "لقد تجاوزت عدد الطلبات المسموح بها خلال فترة زمنية قصيرة.\nتم تقييد المعدل مؤقتًا.\n يرجى المحاولة مرة أخرى بعد قليل."),
@@ -168,7 +170,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "nationalId": MessageLookupByLibrary.simpleMessage("الرقم القومى"),
         "nationalIdError": MessageLookupByLibrary.simpleMessage(
-            "الرقم القومى لابد ان يكون 14 رقم "),
+            "الرقم القومى لابد ان يكون يحتوى عللى أرقام فقط "),
         "noBack": MessageLookupByLibrary.simpleMessage(
             "لم يتم العثور على تاريخ للعودة"),
         "noConnection":
@@ -225,7 +227,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resendEmail": MessageLookupByLibrary.simpleMessage(
             "إعادة إرسال البريد الإلكتروني"),
         "retry": MessageLookupByLibrary.simpleMessage("أعد المحاولة"),
-        "sales": MessageLookupByLibrary.simpleMessage("المبياعات"),
+        "sales":
+            MessageLookupByLibrary.simpleMessage("المبيعات بـ الدينار الكويتى"),
         "save": MessageLookupByLibrary.simpleMessage("احفظ"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
         "searchHint":
@@ -256,6 +259,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalCustomersOfToday":
             MessageLookupByLibrary.simpleMessage("عدد العملاء"),
         "totalIncome": MessageLookupByLibrary.simpleMessage("اجمالى الدخل"),
+        "totalIncomeOfToday":
+            MessageLookupByLibrary.simpleMessage("اجمالى دخل اليوم"),
         "transactionOf":
             MessageLookupByLibrary.simpleMessage("المعاملات فى شهر"),
         "trend": MessageLookupByLibrary.simpleMessage("موضوعات رائجة اليوم"),

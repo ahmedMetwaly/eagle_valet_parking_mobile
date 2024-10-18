@@ -183,7 +183,7 @@ class EditEmployersINParking extends StatelessWidget {
                                   controller: nationalId,
                                   label: S.current.nationalId),
                               const SizedBox(height: 10),
-                              Phone(controller: phone),
+                              PhoneNumber(controller: phone),
                               const SizedBox(height: 10),
                               Passsword(
                                 inputController: password,

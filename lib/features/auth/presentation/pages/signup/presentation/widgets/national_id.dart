@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 import "../../../../../../../generated/l10n.dart";
-
+// this for kuwit is 12 digits   
 class NationalId extends StatefulWidget {
   const NationalId({super.key, required this.controller, this.onChange});
   final TextEditingController controller;
@@ -32,7 +32,7 @@ class _NationalIdState extends State<NationalId> {
               value.contains(".")) {
             return S.of(context).nationalIdError;
           }
-          if (value.trim().length != 14) {
+          if (value.trim().length != 12) {
             return S.of(context).enterValidNationalId;
           }
         }

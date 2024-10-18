@@ -55,9 +55,10 @@ class DisplayParking extends StatelessWidget {
                       /*  context
                           .read<AddEmployersCubit>()
                           .getEmployersWorkAtParking(parking.parkingId); */
-                    /*   print(
+                      /*   print(
                           context.read<LiveOverViewCubit>().parking.parkingId);
-                    */   Navigator.pushNamed(context, Routes.editParking,
+                    */
+                      Navigator.pushNamed(context, Routes.editParking,
                           arguments: state.data);
                     }),
               ),
@@ -91,7 +92,7 @@ class DisplayParking extends StatelessWidget {
                           .read<LiveOverViewCubit>()
                           .listenToDocument(parking.parkingId);
                     },
-                    child: Text(S.current.retry),
+                    child: Text(S.current.ok),
                   ),
                 ],
               )),
@@ -203,7 +204,7 @@ class DisplayParking extends StatelessWidget {
                                     ]),
                                     Row(children: [
                                       Text(
-                                        "${S.current.totalIncome}: ",
+                                        "${S.current.totalIncomeOfToday}: ",
                                         style: Theme.of(context)
                                             .textTheme
                                             .headlineSmall!
@@ -235,7 +236,13 @@ class DisplayParking extends StatelessWidget {
                                                   .toString(),
                                         ),
                                       ),
-                                     
+                                      Text(
+                                        S.current.currency,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .headlineSmall!
+                                            .copyWith(fontSize: 14),
+                                      ),
                                     ]),
                                   ],
                                 ),
@@ -278,20 +285,22 @@ class DisplayParking extends StatelessWidget {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment:  CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                    "${S.current.totalIncome}: ${Intl.getCurrentLocale() == "ar" ? Translate().translateNumberToArabic(state.totalIncome.toString()) : state.totalIncome}",
+                                    "${S.current.totalIncome}: ${Intl.getCurrentLocale() == "ar" ? Translate().translateNumberToArabic(state.totalIncome.toString()) : state.totalIncome} ${S.current.currency}",
                                     style: Theme.of(context)
                                         .textTheme
                                         .headlineSmall!
-                                        .copyWith(color: Colors.deepOrange[900])),
-                                          Text(
+                                        .copyWith(
+                                            color: Colors.deepOrange[900])),
+                                Text(
                                     "${S.current.totalCustomer}: ${Intl.getCurrentLocale() == "ar" ? Translate().translateNumberToArabic(state.data!.tickets!.length.toString()) : state.data!.tickets!.length.toString()}",
                                     style: Theme.of(context)
                                         .textTheme
                                         .headlineSmall!
-                                        .copyWith(color: Colors.deepOrange[900])),
+                                        .copyWith(
+                                            color: Colors.deepOrange[900])),
                               ],
                             ),
                             const SizedBox(height: 10),

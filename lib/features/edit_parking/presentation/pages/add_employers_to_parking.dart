@@ -156,7 +156,7 @@ class _AddEmployersToParkingState extends State<AddEmployersToParking> {
                                       },
                                     ),
                                     const SizedBox(height: 10),
-                                    Phone(controller: employers[index][3]),
+                                    PhoneNumber(controller: employers[index][3]),
                                     const SizedBox(height: 10),
                                     Name(
                                       nameController: employers[index][1],

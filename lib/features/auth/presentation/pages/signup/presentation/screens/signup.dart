@@ -117,7 +117,7 @@ class SignUp extends StatelessWidget {
                       const SizedBox(
                         height: SizeManager.sSpace,
                       ),
-                      Phone(controller: phoneNumber),
+                      PhoneNumber(controller: phoneNumber),
                       const SizedBox(
                         height: SizeManager.sSpace,
                       ),
